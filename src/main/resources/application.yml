@@ -1,0 +1,19 @@
+server:
+  port: 8087
+  servlet:
+    context-path: /rpy
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/rpy_tenant
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
+      format_sql: true
+      ddl-auto: update
+
+  logging:
+    level:
+      root: ALL
